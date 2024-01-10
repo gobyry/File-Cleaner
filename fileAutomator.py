@@ -54,7 +54,7 @@ def move_file(dest, entry, name):
 # Class handles file changes.
 class MoverHandler(FileSystemEventHandler):
 
-    def on_modified(self, event):   #  * Checks file types and moves accordingly.
+    def on_modified(self, event):   # Checks file types and moves accordingly.
         with scandir(source_dir) as entries:
             for entry in entries:
                 name = entry.name
